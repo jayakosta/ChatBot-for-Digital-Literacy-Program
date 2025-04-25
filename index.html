@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DigiBuddy - Your Digital Literacy Companion</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🤖 DigiBuddy</h1>
+      <p>Helping you explore the digital world, one step at a time!</p>
+      <select id="languageToggle">
+        <option value="en">🇬🇧 English</option>
+        <option value="hi">🇮🇳 हिंदी</option>
+      </select>
+    </div>
+    
+    <div class="chatbox" id="chatbox">
+      <div class="bot-message">👋 Hello! I’m DigiBuddy – your tech buddy. Ask me anything!</div>
+    </div>
+    
+    <div class="input-area">
+      <input type="text" id="userInput" placeholder="Type your question here..." />
+      <button onclick="sendMessage()">Send</button>
+      <button onclick="startVoice()">🎙 Speak</button>
+    </div>
+    
+    <div class="quick-buttons">
+      <button onclick="quickReply('What is a browser?')">🌐 Browser?</button>
+      <button onclick="quickReply('How do I pay a bill online?')">💳 Pay Bill</button>
+      <button onclick="quickReply('My phone won’t connect to Wi-Fi')">📶 Wi-Fi Help</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
